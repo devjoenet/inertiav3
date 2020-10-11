@@ -4,6 +4,9 @@
   <inertia-link href="/blog">Blog</inertia-link>
 </template>
 
-<script>
-export default {}
+<script lang="ts">
+import { defineComponent } from "vue"
+export default defineComponent({
+  name: "Home"
+})
 </script>
