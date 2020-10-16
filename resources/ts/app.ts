@@ -7,10 +7,8 @@ const el = document.getElementById("app")
 createApp({
   render: () =>
     h(app, {
-      //@ts-ignore
-      initialPage: JSON.parse(el.dataset.page),
-      //@ts-ignore
-      resolveComponent: (name) => require(`./Pages/${name}`).default
+      initialPage: JSON.parse(el!.dataset.page!),
+      resolveComponent: (name: string) => require(`./Pages/${name}`).default
     })
 })
   .use(plugin)

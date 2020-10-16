@@ -9,5 +9,6 @@ mix
   .ts("resources/ts/app.ts", "public/js")
   .vue({ version: 3 })
   .alias({
-    "@": path.resolve("resources/ts")
+    "@": path.resolve("resources")
   })
+  .sourceMaps()

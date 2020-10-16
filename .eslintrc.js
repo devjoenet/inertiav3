@@ -23,11 +23,13 @@ module.exports = {
         singleQuote: false,
         semi: false,
         trailingComma: "none",
-        printWidth: 80
+        printWidth: 90
       }
     ],
     "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
     "@typescript-eslint/no-var-requires": 0,
-    "vue/no-multiple-template-root": 0
+    "vue/no-multiple-template-root": 0,
+    "@typescript-eslint/no-this-alias": 0
   }
 }
